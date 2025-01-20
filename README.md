@@ -27,7 +27,8 @@ Este repositório contém um script em Python que automatiza o processo de login
   pip install pyautogui pandas openpyxl
 
 Planilha Excel
-    O arquivo contendo os dados dos produtos deve estar no formato .xlsx e incluir as colunas:
+    
+O arquivo contendo os dados dos produtos deve estar no formato .xlsx e incluir as colunas:
     Codigo
     Marca
     Tipo
@@ -36,7 +37,8 @@ Planilha Excel
     Custo
     Obs (opcional)
 
-Como usar
+
+## Como usar
 
    Clone o repositório:
 ```bash
@@ -55,19 +57,18 @@ Execute o script:
 python cadastro_produtos.py
 ```
 
-Observações
+## Observações
 
    O script foi desenvolvido e testado para sistemas específicos com base em coordenadas fixas de tela. Certifique-se de ajustar as coordenadas para o seu ambiente.
     A funcionalidade de automação depende da resolução e do layout da interface gráfica do sistema.
 
-Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
    pyautogui: Automação de interações com a interface gráfica, como cliques, pressionamento de teclas e movimentação do mouse.
     pandas: Manipulação e leitura de dados estruturados, como planilhas Excel.
 
-Licença
+## Licença
 
 Este projeto é de uso livre para fins educacionais e profissionais. Contribuições são bem-vindas!
-
 
 Se precisar de ajustes ou desejar incluir mais detalhes, me avise!
