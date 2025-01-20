@@ -34,12 +34,13 @@ pyautogui.PAUSE = 0.5
 
 # PASSO 2:
   #Fazer o login
-  pyautogui.press("tab") # pressionar tab
+  #pyautogui.press("tab") # pressionar tab
+  pyautogui.click(x=447, y=406) # clicar no campo de usuário
 
   pyautogui.write("isaac") # escrever o usuário
 
-  pyautogui.press("tab") # pressionar tab
-
+  #pyautogui.press("tab") # pressionar tab
+  pyautogui.click(x=370, y=499) # clicar no campo de senha
   pyautogui.write("12345") #  escrever a senha
 
   pyautogui.press('enter') # pressionar enter
