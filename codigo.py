@@ -25,7 +25,7 @@ pyautogui.hotkey("ctrl", "t") # abre uma nova aba
 
 pyautogui.hotkey("ctrl", "l") # selecionar a barra de endereço
 
-pyautogui.write('https://dlp.hashtagtreinamentos.com/python/intensivao/login')
+pyautogui.write('https://dlp.hashtagtreinamentos.com/python/intensivao/login') # escrever o link do sistema no navegador
 
 pyautogui.press('enter')
 
@@ -36,7 +36,7 @@ time.sleep(3)
 
 #pyautogui.press("tab") # pressionar tab
 pyautogui.click(x=447, y=406) # clicar no campo de usuário
-pyautogui.write("produtos@gmail.com") # escrever o usuário
+pyautogui.write("isaac.produtos@gmail.com") # escrever o usuário
 
 pyautogui.press("tab") # ir para o campo de senha
 pyautogui.write("12345") #  escrever a senha
@@ -47,46 +47,46 @@ pyautogui.press('enter') # pressionar enter
 
 # PASSO 3: Importar a base de dados dos produtos
 
-tabela = pd.read_excel('produtos.xls') # importar a base de dados e salva na variável tabela
+tabela = pd.read_csv('produtos.csv') # importar a base de dados e salva na variável tabela
 print(tabela) # exibir a tabela
 
-time.sleep(2)
+time.sleep(1)
 
 # PASSO 4: Cadastrar os produto
     
 for i, produto in tabela.iterrows():
     pyautogui.click(x=345, y=300) # ir para o campo código do produto
-    pyautogui.write(produto['Codigo'])
+    pyautogui.write(produto['codigo'])
 
-    pyautogui.click("tab") # ir para o campo marca do produto")
-    pyautogui.write(str(produto['Marca']))
+    pyautogui.press("tab") # ir para o campo marca do produto")
+    pyautogui.write(str(produto['marca']))
 
-    pyautogui.click("tab") # ir para o campo tipo do produto
-    pyautogui.write(str(produto['Tipo']))
+    pyautogui.press("tab") # ir para o campo tipo do produto
+    pyautogui.write(str(produto['tipo']))
 
-    pyautogui.click("tab") # ir para o campo categoria do produto
-    pyautogui.write(produto['Categoria'])
+    pyautogui.press("tab") # ir para o campo categoria do produto
+    pyautogui.write(str(produto['categoria']))
 
-    pyautogui.click("tab") # ir para o campo preço unitário do produto
-    pyautogui.write(str(produto['Preço Unitário']))
+    pyautogui.press("tab") # ir para o campo preço unitário do produto
+    pyautogui.write(str(produto['preco_unitario']))
 
-    pyautogui.click("tab") # ir para o campo custo do produto
-    pyautogui.write(str(produto['Custo']))
+    pyautogui.press("tab") # ir para o campo custo do produto
+    pyautogui.write(str(produto['custo']))
 
-    pyautogui.click("tab") # ir para o campo obs
-    if pd.isna(produto['Obs']):
+    pyautogui.press("tab") # ir para o campo obs
+    if pd.isna(produto['obs']):
         pyautogui.write("")
     else:
-        pyautogui.write(produto['Obs'])
+        pyautogui.write(produto['obs'])
 
-    pyautogui.click("tab") # ir para o botão enviar
+    pyautogui.press("tab") # ir para o botão enviar
     pyautogui.press('enter') # pressionar enviar e salvar o cadastro
 
-    time.sleep(2) # esperar 2 segundos para cadastrar o próximo produto
+    time.sleep(1) # esperar 1 segundo para cadastrar o próximo produto
 
     if i < len(tabela) - 1:
         i += 1
         pyautogui.scroll(2000) # rolar a página para cima
-        time.sleep(2) # esperar 2 segundos para cadastrar o próximo produto
+        time.sleep(1) # esperar 1 segundo para cadastrar o próximo produto
     else:
         break
