@@ -26,16 +26,22 @@ Este repositório contém um script em Python que automatiza o processo de login
   ```bash
   pip install pyautogui pandas openpyxl
 
-Planilha Excel
+## Planilha Excel
     
 O arquivo contendo os dados dos produtos deve estar no formato .xlsx e incluir as colunas:
-    Codigo
-    Marca
-    Tipo
-    Categoria
-    Preço Unitário
-    Custo
-    Obs (opcional)
+   Codigo
+    
+   Marca
+    
+   Tipo
+    
+   Categoria
+    
+   Preço Unitário
+    
+   Custo
+    
+   Obs (opcional)
 
 
 ## Como usar
