@@ -36,7 +36,7 @@ time.sleep(3)
 
 #pyautogui.press("tab") # pressionar tab
 pyautogui.click(x=447, y=406) # clicar no campo de usuário
-pyautogui.write("isaac.produtos@gmail.com") # escrever o usuário
+pyautogui.write("produtos@gmail.com") # escrever o usuário
 
 pyautogui.press("tab") # ir para o campo de senha
 pyautogui.write("12345") #  escrever a senha
@@ -47,7 +47,7 @@ pyautogui.press('enter') # pressionar enter
 
 # PASSO 3: Importar a base de dados dos produtos
 
-tabela = pd.read_excel('produtos.csvisaac.produtos@gmail.comhttps://dlp.hashtagtreinamentos.com/python/intensivao/login') # importar a base de dados e salva na variável tabela
+tabela = pd.read_excel('produtos.xls') # importar a base de dados e salva na variável tabela
 print(tabela) # exibir a tabela
 
 time.sleep(2)
