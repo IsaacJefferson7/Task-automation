@@ -5,27 +5,45 @@
 # Passo 4: Cadastrar um novo produto.
 # Passo 5: Repetir o passo 4 até acabar todos os produtos.
 
-# Passo 1:
 import pyautogui
 import time
 
-pyautogui.press('win') # tecla do windows
-time.sleep(1)
+pyautogui.PAUSE = 0.5
 
-pyautogui.write('firefox') # escrever firefox
-time.sleep(1)
+# PASSO 1:
 
-pyautogui.press('enter') # pressionar enter
-time.sleep(5)  # Aumentar o tempo de espera para garantir que o Firefox esteja totalmente carregado
+  # Abrir o navegador
+  pyautogui.press('win') # tecla do windows
 
-pyautogui.hotkey("ctrl", "t") # abre uma nova aba
-time.sleep(2)
+  pyautogui.write('firefox') # escrever firefox
 
-# Selecionar a barra de endereço da aba atual
-pyautogui.hotkey("ctrl", "l") # selecionar a barra de endereço
-time.sleep(2)
-pyautogui.write('https://dlp.hashtagtreinamentos.com/python/intensivao/login')  
-time.sleep(2)
+  pyautogui.press('enter') # pressionar enter
 
-pyautogui.press('enter')
-time.sleep(5)
+
+  # Acessar o sistema da empresa
+  pyautogui.hotkey("ctrl", "t") # abre uma nova aba
+
+  pyautogui.hotkey("ctrl", "l") # selecionar a barra de endereço
+
+  pyautogui.write('https://dlp.hashtagtreinamentos.com/python/intensivao/login')
+
+  pyautogui.press('enter')
+
+  time.sleep(3)
+
+
+# PASSO 2:
+  #Fazer o login
+  pyautogui.press("tab") # pressionar tab
+
+  pyautogui.write("isaac") # escrever o usuário
+
+  pyautogui.press("tab") # pressionar tab
+
+  pyautogui.write("12345") #  escrever a senha
+
+  pyautogui.press('enter') # pressionar enter
+
+
+# PASSO 3:
+
