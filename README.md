@@ -71,7 +71,8 @@ python cadastro_produtos.py
 
 ## 🔧 Tecnologias Utilizadas
 
-⚙ pyautogui: Automação de interações com a interface gráfica, como cliques, pressionamento de teclas e movimentação do mouse.
+⚙ pyautogui: Automação de interações com a interface gráfica, como cliques, pressionamento de teclas e movimentação do mouse
+
 ⚙ pandas: Manipulação e leitura de dados estruturados, como planilhas Excel.
 
 ## Licença
