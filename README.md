@@ -1,4 +1,4 @@
-# Automação de Cadastro de Produtos
+# 🚀 Automação de Cadastro de Produtos
 
 Este repositório contém um script em Python que automatiza o processo de login no sistema de uma empresa, importação de uma base de dados e cadastro de produtos. O script utiliza as bibliotecas `pyautogui` e `pandas` para realizar as operações de forma automatizada e eficiente.
 
