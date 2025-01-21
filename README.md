@@ -2,7 +2,7 @@
 
 Este repositório contém um script em Python que automatiza o processo de login no sistema de uma empresa, importação de uma base de dados e cadastro de produtos. O script utiliza as bibliotecas `pyautogui` e `pandas` para realizar as operações de forma automatizada e eficiente.
 
-## Funcionalidades
+## 💡 Funcionalidades
 
 1. **Abrir o sistema da empresa**  
    O script abre o navegador e acessa o sistema da empresa na URL especificada.
@@ -16,7 +16,7 @@ Este repositório contém um script em Python que automatiza o processo de login
 4. **Cadastro automatizado de produtos**  
    Preenche os campos de cadastro de produtos no sistema com base nos dados da planilha.
 
-## Pré-requisitos
+## 💻 Pré-requisitos
 
 - **Python 3.8 ou superior**  
   Certifique-se de ter o Python instalado no seu computador.
@@ -26,7 +26,7 @@ Este repositório contém um script em Python que automatiza o processo de login
   ```bash
   pip install pyautogui pandas openpyxl
 
-## Planilha Excel
+## 📈 Planilha Excel
     
 O arquivo contendo os dados dos produtos deve estar no formato .csv e incluir as colunas:
    
@@ -64,7 +64,7 @@ Execute o script:
 python cadastro_produtos.py
 ```
 
-## 💡 Observações
+## 📝 Observações
 
    O script foi desenvolvido e testado para sistemas específicos com base em coordenadas fixas de tela. Certifique-se de ajustar as coordenadas para o seu ambiente.
     A funcionalidade de automação depende da resolução e do layout da interface gráfica do sistema.
@@ -75,7 +75,7 @@ python cadastro_produtos.py
 
 ⚙ pandas: Manipulação e leitura de dados estruturados, como planilhas Excel.
 
-## Licença
+## 🏷 Licença
 
 Este projeto é de uso livre para fins educacionais e profissionais. Contribuições são bem-vindas!
 
