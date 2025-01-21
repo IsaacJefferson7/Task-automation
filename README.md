@@ -45,7 +45,7 @@ O arquivo contendo os dados dos produtos deve estar no formato .csv e incluir as
    Obs (opcional)
 
 
-## Como usar
+## 🔎 Como usar
 
    Clone o repositório:
 ```bash
@@ -64,16 +64,15 @@ Execute o script:
 python cadastro_produtos.py
 ```
 
-## Observações
+## 💡 Observações
 
    O script foi desenvolvido e testado para sistemas específicos com base em coordenadas fixas de tela. Certifique-se de ajustar as coordenadas para o seu ambiente.
     A funcionalidade de automação depende da resolução e do layout da interface gráfica do sistema.
 
-## Tecnologias Utilizadas
+## 🔧 Tecnologias Utilizadas
 
-pyautogui: Automação de interações com a interface gráfica, como cliques, pressionamento de teclas e movimentação do mouse.
-    
-pandas: Manipulação e leitura de dados estruturados, como planilhas Excel.
+⚙ pyautogui: Automação de interações com a interface gráfica, como cliques, pressionamento de teclas e movimentação do mouse.
+⚙ pandas: Manipulação e leitura de dados estruturados, como planilhas Excel.
 
 ## Licença
 
