@@ -34,7 +34,6 @@ time.sleep(3)
 
 # PASSO 2: Fazer o login
 
-#pyautogui.press("tab") # pressionar tab
 pyautogui.click(x=447, y=406) # clicar no campo de usuário
 pyautogui.write("isaac.produtos@gmail.com") # escrever o usuário
 
